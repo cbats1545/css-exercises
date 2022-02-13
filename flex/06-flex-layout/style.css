@@ -11,7 +11,15 @@ body {
 }
 
 .header {
+  order: 1;
   padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.sidebar,
+.cards {
+  order: 2;
   display: flex;
   flex-flow: row nowrap;
 }
@@ -73,10 +81,11 @@ input {
 }
 
 .footer {
+  order: 3;
   background-color: #eeeeee;
   padding: 10px;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
