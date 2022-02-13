@@ -3,12 +3,15 @@ you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
 body {
-  margin: 0;
+  margin: 8px 8px 8px;
   background: #eee;
   font-family: Besley, serif;
 }
 
 .header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
@@ -27,6 +30,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  padding: 8px;
 }
 
 button {
@@ -41,8 +45,24 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  padding: 8px;
 }
 
 ul {
   list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+}
+
+.account {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  padding: 8px;
+  gap: 8px;
 }
